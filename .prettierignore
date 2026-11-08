@@ -1,0 +1,11 @@
+node_modules
+.pnpm-store
+out
+dist
+.artifacts
+runtime/embedded
+runtime/models
+runtime/ffmpeg
+runtime/native
+runtime/installed.json
+pnpm-lock.yaml

@@ -1,0 +1,53 @@
+{
+  "name": "local-toolbox",
+  "version": "0.1.0",
+  "private": true,
+  "description": "开源好物桌面工具箱",
+  "author": "Toolbox",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./out/main/index.js",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "postinstall": "install-electron",
+    "dev": "electron-vite dev --watch",
+    "runtime:download": "node scripts/download-runtimes.mjs",
+    "runtime:verify": "node scripts/verify-runtimes.mjs",
+    "python:lock": "uv lock --check",
+    "watermark:prepare": "node scripts/prepare-watermark-runtime.mjs",
+    "cutout:prepare": "node scripts/prepare-cutout-runtime.mjs",
+    "cutout:verify": "runtime/embedded/python.exe -B runtime/features/cutout/cli.py --verify",
+    "runtime:prepare": "node scripts/download-runtimes.mjs && node scripts/prepare-watermark-runtime.mjs && node scripts/prepare-cutout-runtime.mjs && node scripts/verify-runtimes.mjs",
+    "start": "electron-vite preview",
+    "typecheck": "vue-tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build": "vue-tsc --noEmit && electron-vite build",
+    "test": "vitest run --passWithNoTests",
+    "pack": "vue-tsc --noEmit && electron-vite build && electron-builder --dir",
+    "dist:win": "vue-tsc --noEmit && electron-vite build && electron-builder --win"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.16.18",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "^24.0.0",
+    "@vitejs/plugin-vue": "6.0.10",
+    "electron": "44.8.0",
+    "electron-builder": "26.15.3",
+    "electron-vite": "6.0.0",
+    "lucide-vue-next": "^0.468.0",
+    "playwright-core": "^1.56.0",
+    "prettier": "^3.9.10",
+    "tailwindcss": "4.3.3",
+    "tdesign-vue-next": "1.20.10",
+    "typescript": "~5.9.0",
+    "vite": "8.3.4",
+    "vitest": "^4.0.0",
+    "vue": "3.5.44",
+    "vue-tsc": "^3.1.0",
+    "zod": "^4.0.0"
+  }
+}

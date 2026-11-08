@@ -1,0 +1,11 @@
+{
+  "platform": "win32",
+  "arch": "x64",
+  "python": {
+    "version": "3.13.16",
+    "url": "https://www.python.org/ftp/python/3.13.16/python-3.13.16-embeddable-amd64.zip",
+    "sha256": "589dc1e9d02549ca5f680710307ff9b77f6e3ffc4aa3efccd7fa54eeeafac94b",
+    "license": "PSF-2.0",
+    "destination": "embedded"
+  }
+}

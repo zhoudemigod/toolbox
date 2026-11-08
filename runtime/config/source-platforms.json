@@ -1,0 +1,128 @@
+[
+  {
+    "id": "auto",
+    "name": "自动识别",
+    "imageMarks": [],
+    "videoMarks": []
+  },
+  {
+    "id": "jimeng",
+    "name": "即梦",
+    "imageMarks": ["jimeng", "jimeng_pill"],
+    "videoMarks": ["seedance"]
+  },
+  {
+    "id": "doubao",
+    "name": "豆包",
+    "imageMarks": ["doubao"],
+    "videoMarks": ["doubao"]
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "imageMarks": ["gemini"],
+    "videoMarks": []
+  },
+  {
+    "id": "sora",
+    "name": "Sora",
+    "imageMarks": [],
+    "videoMarks": ["sora"]
+  },
+  {
+    "id": "veo",
+    "name": "Veo",
+    "imageMarks": [],
+    "videoMarks": ["veo"]
+  },
+  {
+    "id": "kling",
+    "name": "可灵（Kling）",
+    "imageMarks": ["kling"],
+    "videoMarks": ["kling"]
+  },
+  {
+    "id": "qwen",
+    "name": "通义千问（Qwen）",
+    "imageMarks": ["qwen"],
+    "videoMarks": []
+  },
+  {
+    "id": "wan",
+    "name": "通义万相",
+    "imageMarks": ["wan"],
+    "videoMarks": []
+  },
+  {
+    "id": "yuanbao",
+    "name": "腾讯元宝",
+    "imageMarks": ["yuanbao"],
+    "videoMarks": []
+  },
+  {
+    "id": "dola",
+    "name": "Dola",
+    "imageMarks": ["dola"],
+    "videoMarks": ["dola"]
+  },
+  {
+    "id": "workbuddy",
+    "name": "WorkBuddy",
+    "imageMarks": ["workbuddy"],
+    "videoMarks": []
+  },
+  {
+    "id": "samsung",
+    "name": "Samsung Galaxy AI",
+    "imageMarks": ["samsung"],
+    "videoMarks": []
+  },
+  {
+    "id": "runninghub",
+    "name": "RunningHub",
+    "imageMarks": ["runninghub"],
+    "videoMarks": []
+  },
+  {
+    "id": "baidu",
+    "name": "百度",
+    "imageMarks": ["baidu"],
+    "videoMarks": []
+  },
+  {
+    "id": "liblib",
+    "name": "LiblibAI",
+    "imageMarks": ["liblib", "liblib_pill"],
+    "videoMarks": []
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "imageMarks": ["microsoft"],
+    "videoMarks": []
+  },
+  {
+    "id": "generic-ai-label",
+    "name": "通用 AI生成角标",
+    "imageMarks": ["generic_ai_label"],
+    "videoMarks": []
+  },
+  {
+    "id": "openart",
+    "name": "OpenArt",
+    "imageMarks": ["openart"],
+    "videoMarks": []
+  },
+  {
+    "id": "hailuo",
+    "name": "海螺 AI",
+    "imageMarks": [],
+    "videoMarks": ["hailuo"]
+  },
+  {
+    "id": "vidu",
+    "name": "Vidu",
+    "imageMarks": [],
+    "videoMarks": ["vidu"]
+  }
+]

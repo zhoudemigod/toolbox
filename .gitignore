@@ -1,0 +1,26 @@
+/node_modules/
+/.pnpm-store/
+/out/
+/dist/
+/.artifacts/
+/data/
+/.idea/
+/.vscode/
+/docs/
+/design-system/
+/.venv/
+/.python-version
+
+# 内置解释器、FFmpeg、模型与原生库由锁文件和准备脚本恢复，不进入 Git。
+/runtime/embedded/
+/runtime/ffmpeg/
+/runtime/models/
+/runtime/native/
+/runtime/installed.json
+
+*.log
+*.sqlite*
+*.py[cod]
+__pycache__/
+.DS_Store
+Thumbs.db

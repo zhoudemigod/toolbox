@@ -1,0 +1,32 @@
+appId: com.huima.toolbox
+productName: 开源好物
+directories:
+  output: dist
+files:
+  - out/**/*
+  - package.json
+asar: true
+beforePack: ./scripts/before-pack.cjs
+extraResources:
+  - from: runtime
+    to: toolbox
+    filter:
+      - '**/*'
+      - '!**/.gitkeep'
+      - '!embedded/**/__pycache__{,/**/*}'
+      - '!embedded/**/*.pyc'
+      - '!embedded/**/*.pdb'
+      - '!embedded/**/*.lib'
+      - '!embedded/Lib/site-packages/imageio_ffmpeg/binaries/*.exe'
+  - from: src/renderer/src/assets/icon.ico
+    to: toolbox/icon.ico
+win:
+  icon: src/renderer/src/assets/icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: false
+artifactName: '${productName}-${version}-${os}-${arch}.${ext}'

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "watermark-remover",
+    "name": "图片视频去水印",
+    "description": "本地修复图片或视频中的 AI 角标，清理隐藏来源信息。",
+    "runtime": "Python",
+    "pythonEntrypoint": "features/watermark/cli.py",
+    "mediaKinds": ["image", "video"],
+    "outputSuffix": ".cleaned",
+    "supportsPlatforms": true,
+    "eventKind": "watermark"
+  },
+  {
+    "id": "background-remover",
+    "name": "图片抠图",
+    "description": "自动分离图片主体与背景，保留原尺寸并导出透明 PNG。",
+    "runtime": "Python",
+    "pythonEntrypoint": "features/cutout/cli.py",
+    "mediaKinds": ["image"],
+    "outputSuffix": ".cutout",
+    "supportsPlatforms": false,
+    "eventKind": "image"
+  },
+  {
+    "id": "image-crop",
+    "name": "图片裁剪",
+    "description": "选择常用裁剪比例，或自由拖动选区调整尺寸，另存 PNG 图片。",
+    "runtime": "Python",
+    "pythonEntrypoint": "features/crop/cli.py",
+    "mediaKinds": ["image"],
+    "outputSuffix": ".crop",
+    "supportsPlatforms": false,
+    "eventKind": "image"
+  }
+]

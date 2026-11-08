@@ -1,0 +1,25 @@
+/* 保留 TDesign 的基础控件样式；Tailwind 负责全局主题和工具类，不重复引入 Preflight。 */
+@layer theme, base, components, utilities;
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+@source './';
+
+@theme {
+  --font-sans: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-400: #60a5fa;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+  --color-canvas: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-ink: #172033;
+  --color-muted: #526176;
+  --color-line: #e2e8f0;
+  --color-rail: #0f172a;
+}

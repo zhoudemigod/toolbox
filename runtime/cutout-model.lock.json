@@ -1,0 +1,13 @@
+{
+  "name": "BiRefNet-general-lite",
+  "source": "https://github.com/ZhengPeng7/BiRefNet/releases/tag/v1",
+  "url": "https://github.com/ZhengPeng7/BiRefNet/releases/download/v1/BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx",
+  "mirrorUrl": "https://huggingface.co/EmmaJohnson311/TensorRT-ONNX-collect/resolve/43d1d62b06bac8b7d3886a209771f6d7ca10d899/BiRefNet-v2-onnx/BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx",
+  "fallbackUrl": "https://hf-mirror.com/EmmaJohnson311/TensorRT-ONNX-collect/resolve/43d1d62b06bac8b7d3886a209771f6d7ca10d899/BiRefNet-v2-onnx/BiRefNet-general-bb_swin_v1_tiny-epoch_232.onnx",
+  "sha256": "5600024376f572a557870a5eb0afb1e5961636bef4e1e22132025467d0f03333",
+  "md5": "4fab47adc4ff364be1713e97b7e66334",
+  "size": 224005088,
+  "path": "models/birefnet-lite/model.onnx",
+  "inputSize": 1024,
+  "license": "MIT"
+}
